@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301B18A7230019110094AED5 /* TextFieldFormatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B18A6230019110094AED5 /* TextFieldFormatController.swift */; };
+		301B18A9230019220094AED5 /* TextViewFormatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B18A8230019220094AED5 /* TextViewFormatController.swift */; };
+		301B18AD230019E20094AED5 /* TextFieldDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B18AC230019E20094AED5 /* TextFieldDelegateProxy.swift */; };
 		3032CFBF21D412E1008137EE /* DefaultTextInputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3032CFBD21D412E1008137EE /* DefaultTextInputFormatter.swift */; };
 		3032CFC021D412E1008137EE /* DefaultTextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3032CFBE21D412E1008137EE /* DefaultTextFormatter.swift */; };
 		306EBE9F1FC4669100E49BB8 /* FormatParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306EBE9E1FC4669100E49BB8 /* FormatParsingTests.swift */; };
@@ -73,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		301B18A6230019110094AED5 /* TextFieldFormatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormatController.swift; sourceTree = "<group>"; };
+		301B18A8230019220094AED5 /* TextViewFormatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewFormatController.swift; sourceTree = "<group>"; };
+		301B18AC230019E20094AED5 /* TextFieldDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateProxy.swift; sourceTree = "<group>"; };
 		3032CFBD21D412E1008137EE /* DefaultTextInputFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextInputFormatter.swift; sourceTree = "<group>"; };
 		3032CFBE21D412E1008137EE /* DefaultTextFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextFormatter.swift; sourceTree = "<group>"; };
 		306EBE9E1FC4669100E49BB8 /* FormatParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatParsingTests.swift; sourceTree = "<group>"; };
@@ -162,6 +168,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301B18A5230018EC0094AED5 /* TextFormatControllers */ = {
+			isa = PBXGroup;
+			children = (
+				301B18AA230019C40094AED5 /* TextFieldFormatController */,
+				301B18AB230019CD0094AED5 /* TextViewFormatController */,
+			);
+			path = TextFormatControllers;
+			sourceTree = "<group>";
+		};
+		301B18AA230019C40094AED5 /* TextFieldFormatController */ = {
+			isa = PBXGroup;
+			children = (
+				301B18A6230019110094AED5 /* TextFieldFormatController.swift */,
+				301B18AC230019E20094AED5 /* TextFieldDelegateProxy.swift */,
+			);
+			path = TextFieldFormatController;
+			sourceTree = "<group>";
+		};
+		301B18AB230019CD0094AED5 /* TextViewFormatController */ = {
+			isa = PBXGroup;
+			children = (
+				301B18A8230019220094AED5 /* TextViewFormatController.swift */,
+			);
+			path = TextViewFormatController;
+			sourceTree = "<group>";
+		};
 		30212EFE2154BD3200F5785A /* BundleFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +207,7 @@
 			children = (
 				307EA22C1FAA1B5B00DE439D /* Categories */,
 				307EA2141FAA1B5B00DE439D /* TextFormatter */,
+				301B18A5230018EC0094AED5 /* TextFormatControllers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -684,6 +717,9 @@
 				307EA2341FAA1B5B00DE439D /* TextFormatter.swift in Sources */,
 				30EB6CB922BB870E00447D5A /* SumTextInputFormatterCaretPositionCalculator.swift in Sources */,
 				30EB6CBA22BB870E00447D5A /* SumTextInputFormatter.swift in Sources */,
+				301B18AD230019E20094AED5 /* TextFieldDelegateProxy.swift in Sources */,
+				301B18A7230019110094AED5 /* TextFieldFormatController.swift in Sources */,
+				301B18A9230019220094AED5 /* TextViewFormatController.swift in Sources */,
 				307EA2331FAA1B5B00DE439D /* TextInputFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

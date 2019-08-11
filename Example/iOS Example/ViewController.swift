@@ -132,10 +132,6 @@ class TextInputController: NSObject, UITextFieldDelegate {
   var formatter: TextInputFormatter?
   
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    
-    print(textField.text ?? "")
-    print(range)
-    print(string)
     guard let formatter = formatter else { return true }
     let result = formatter.formatInput(currentText: textField.text ?? "", range: range, replacementString: string)
     textField.text = result.formattedText
